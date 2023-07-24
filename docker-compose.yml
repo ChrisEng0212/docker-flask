@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  dockerflask:
+    image: flask_of
+    ports:
+      - 5000:5000
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+
